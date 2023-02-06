@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"/>
+  <link rel = "stylesheet" type="text/css" href="/style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="/js/javascript.js"></script>
+  <title>Natalie Davies CV</title>
+</head>
+<body>
+  <div class="main-header">
+    <a class="active" href="home.html">home</a>
+    <a href="projects.html">projects</a>
+    <a href="work_experience.html">work experience</a>
+    <a href="myskills.html">my skills</a>
+    <a href="contactme.html">contact me</a>
+
+    </div>
+
+
+    <div class="contact">
+      <div id="error"></div>
+    <form action="/contactme.html" id="contact">
+      <p><strong>Please fill in your details if you would like to get in touch!</strong> </p>
+      
+      <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+      <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            
+      <label for="email">Email</label> 
+        <input type="text" id="email" name="email" placeholder="Your email address.." required>
+      
+      <label for="conEmail">Confirm Email</label> 
+        <input type="text" id="conEmail" name="conEmail" placeholder="Confirm your email address.." required>
+      <p id="text"></p>
+      <label for="phone">Phone</label> 
+        <input type="text" id="phone" name="phone" placeholder="Your phone number.." required>
+
+      <label class="preference">Email
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+        
+      <label class="preference">Phone
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="preference">Text
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label><br>
+
+      <label class="date">Approx Start Date of Project
+        <input type="date" id="date" required>
+        </label><br>
+      
+
+      <label class="duration">Length of Project
+        <input type="text" id="duration" required>
+      </label>
+      <label class="duration">
+      <select id="durationSelect">
+        <option value="day">Day/s</option>
+        <option value="month">Month/s</option>
+        <option value="year/s">Year/s</option>
+      </select>
+    </label>
+    <br>
+      <label for="subject">Project details</label>
+        <textarea id="subject" name="subject" placeholder="..." style="height:200px" required></textarea>
+      
+      <label id="submit">
+      <input type="submit" value="Submit">
+      </label>  
+    </form>
+    </div>
+
+</body>
+</html>
